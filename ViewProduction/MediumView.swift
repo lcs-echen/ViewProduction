@@ -9,7 +9,32 @@ import SwiftUI
 
 struct MediumView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+    
+            VStack (alignment: .trailing){
+                HStack (alignment: .bottom){
+                    Text("_________________________")
+                        .multilineTextAlignment(.trailing)
+                    Rectangle()
+                        .frame(width:200.0, height: 300.0)
+
+                }
+                
+                HStack {
+                    Text("__________________________________________________")
+                        .multilineTextAlignment(.leading)
+                    Text("_________________________________________________")
+                        .multilineTextAlignment(.leading)
+                }
+            }
+            
+            VStack {
+                Text("BIG TITLE GOES HERE")
+                    .font(.largeTitle)
+                Text("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+                
+            }
+        }
     }
 }
 
